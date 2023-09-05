@@ -1,0 +1,15 @@
+# SPRING PROFILES
+spring:
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/vda?minPoolSize=3&connectTimeoutMS=20000&socketTimeoutMS=20000
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 300MB
+      max-request-size: 300MB
+
+server:
+  port: 8080
+  servlet:
+    context-path:
